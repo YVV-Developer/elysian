@@ -4,6 +4,7 @@ import emailImg from '../../assets/images/email-icon.png';
 import '../../index.css'
 import { NavLink } from 'react-router-dom';
 import iziToast from 'izitoast';
+import { Helmet } from 'react-helmet';
 
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -87,6 +88,9 @@ const ContactUs = () => {
         }
         return (
             <>
+            <Helmet>
+                <title>Contact Us - Elysian</title>
+            </Helmet>
                 <div className="page-heading header-text">
                     <div className="container">
                         <div className="row">

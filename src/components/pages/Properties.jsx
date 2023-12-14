@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import properties_data from './PropertiesData';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Properties = () => {
     const [activeCategory, setActiveCategory] = useState('all');
@@ -56,12 +57,15 @@ const Properties = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Properties - Elysian</title>
+            </Helmet>
             <div className="page-heading header-text">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <span className="breadcrumb">
-                            <NavLink to={'/'}>Home</NavLink> / Properties
+                                <NavLink to={'/'}>Home</NavLink> / Properties
                             </span>
                             <h3>Properties</h3>
                         </div>

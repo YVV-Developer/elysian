@@ -12,6 +12,7 @@ import deal2 from '../../assets/images/deal-02.jpg'
 import deal3 from '../../assets/images/deal-03.jpg'
 import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 const PropertyDetails = () => {
     const [loading, setLoading] = useState(true);
@@ -51,6 +52,9 @@ const PropertyDetails = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Propertie-Details - Elysian</title>
+            </Helmet>
             <div className="page-heading header-text">
                 <div className="container">
                     <div className="row">

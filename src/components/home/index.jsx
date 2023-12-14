@@ -20,6 +20,7 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import properties_data from '../pages/PropertiesData';
 import { Link, NavLink } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 const images = [
   { img: banner1, city: "Toronto", country: "Canada", text1: `Hurry! Get the Best Villa for you` },
@@ -56,6 +57,9 @@ const Hero = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Elysian</title>
+      </Helmet>
       <div className="relative">
         <div className="carousel-container">
           <Carousel
